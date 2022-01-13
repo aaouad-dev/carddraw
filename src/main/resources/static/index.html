@@ -1,0 +1,34 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Draw Cards</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/cards.css" media="screen"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/cards.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="playingCards fourColours rotateHand row row justify-content-md-center">
+        <div id="game" class="col-md-auto">
+            <div id="new-hand">
+                <button type="button" class="btn btn-info" id="hand" onclick="draw();">Click for New Cards Draw!</button>
+            </div>
+            <p><h3 class="text-warning">Color order : </h3> <h3 class="text-warning" id="colororder"></h3></p>
+            <p><h3 class="text-warning">Value order : </h3> <h3 class="text-warning" id="valueorder"></h3></p>
+            <h2 class="text-info">Random Hand :</h2>
+            <ul id="shuffled-cards" class="table"></ul>
+
+            <h2 class="text-info">Sorted Hand :</h2>
+            <ul id="sorted-cards" class="table"></ul>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

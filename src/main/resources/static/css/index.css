@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700");
+
+body {
+    background-color: beige;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    line-height: 1;
+}
+
+.options.active {
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    background: #ddd;
+    padding: .5em;
+}
+
+.options.active h3 {
+    font-size: 1.2em;
+}
+
+.options.active ul {
+    padding: 0;
+}
+
+.options.active li {
+    color: #00c;
+    text-decoration: underline;
+    margin-left: 1.5em;
+    cursor: pointer;
+}
+
+.options.active li:hover {
+    text-decoration: none;
+}
+
+div.clear {
+    clear: both;
+    height: 0;
+    line-height: 0;
+    font-size: 1px;
+    visibility: hidden;
+}
+
+#game {
+    margin-top: 2em;
+    display: none;
+}
+#new-hand{
+    margin-top: 2em;
+    display: inline-block;
+}
+
+.col-4{
+    padding-left: 0;
+}
+.container-fluid{
+    margin: 10%
+}
+.text-info {
+    color: #004085 !important;
+}
+
+.h2{
+    margin-top: 5%;
+}
